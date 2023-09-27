@@ -1,0 +1,54 @@
+header {
+    height: 100vh;
+}
+
+.logo {
+    height: 4.5rem;
+}
+
+.logo img {
+    height: 100%;
+    width: fit-content;
+    object-fit: contain;
+
+}
+
+.navigation {
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background: linear-gradient(180deg, #333333 45%, transparent);
+}
+
+.menu {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    cursor: pointer;
+
+}
+
+.menu a {
+    padding: 5px 20px;
+    margin: 0.3rem;
+    text-align: left;
+    font-size: 0.7em;
+}
+
+.menu a.active {
+    font-weight: 900;
+    color: purple;
+}
+
+.menu a:hover {
+    color: #46a0f5;
+}

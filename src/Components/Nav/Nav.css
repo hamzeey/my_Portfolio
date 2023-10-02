@@ -73,37 +73,49 @@ ul a {
 
     .menu-icon {
         display: block;
+        cursor: pointer;
+        margin: 0 15px;
     }
 
     .menu {
         position: absolute;
         top: 3rem;
+        visibility: hidden;
         right: 4rem;
         background: white;
         color: black;
+        display: flex;
         flex-direction: column;
         gap: 2rem;
         padding: 3rem;
         border-radius: 15px;
         align-items: flex-start;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 50%;
+        transition: right 0.5s;
     }
 
     .menu a {
         color: black;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+
     }
 
-    /* ul {
-        display: none;
-    } */
+    .active {
+        visibility: visible;
+        right: 5px;
+        opacity: 1;
+    }
 }
 
 
 /* medium screens */
 @media screen and (min-width:601px) and (max-width:1023px) {
-    nav {
-        width: ;
-    }
 
     .logo {
         height: 3.5rem;
@@ -119,9 +131,43 @@ ul a {
 
     .menu-icon {
         display: block;
+        cursor: pointer;
+        margin: 0 35px;
     }
 
-    /* ul {
-            display: none;
-        } */
+    .menu {
+        position: absolute;
+        top: 4rem;
+        visibility: hidden;
+        right: 0;
+        background: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem;
+        border-radius: 10px;
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 65%;
+        transition: right 0.5s ease-in-out;
+
+    }
+
+    .menu a {
+        color: black;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .active {
+        visibility: visible;
+        right: 15px;
+        opacity: 1;
+    }
+
 }

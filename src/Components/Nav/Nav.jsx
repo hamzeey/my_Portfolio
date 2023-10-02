@@ -14,9 +14,11 @@ function Nav() {
     return (
         <nav>
             <div className='logo'>
-                <img src={logo} alt="" />
+                <img src={logo} />
             </div>
-            <ul className='menu'>
+
+            <ul className={`menu ${toggle ? 'active' : ''}`}>
+
                 <Link to="Hero" spy={true} smooth={false} offset={-150} duration={200}>HOME</Link>
                 <Link to="About" spy={true} smooth={false} offset={-110} duration={200}>ABOUT</Link>
                 <Link to="skill" spy={true} smooth={false} offset={-110} duration={200}>SKILLS</Link>
@@ -24,7 +26,7 @@ function Nav() {
                 <Link to="Contact" spy={true} smooth={false} offset={-110} duration={200}>CONTACT</Link>
             </ul>
             <div className='menu-icon' onClick={handleclick}>
-                <GiHamburgerMenu size={30} />
+                {toggle ? <GrClose size={30} /> : <GiHamburgerMenu size={30} />}
             </div>
         </nav>
     )

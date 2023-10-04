@@ -51,6 +51,7 @@ nav {
 
 .menu a:hover {
     color: #46a0f5;
+    transition: 0.4s ease-in-out;
 }
 
 .menu-icon {

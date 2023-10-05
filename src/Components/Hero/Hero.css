@@ -38,7 +38,7 @@
 
 .socials div:hover {
     background-color: var(--berry-blue);
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .scroll-down {
@@ -46,15 +46,27 @@
     transform: rotate(90deg);
     right: -2rem;
     top: 20rem;
-    margin-right: 30px;
+    margin-right: 10px;
     font-weight: bolder;
     cursor: pointer;
 }
 
-.scroll-down h4:hover {
+.scroll-down a {
+    color: var(--dark-grey);
+}
+
+.scroll-down a:hover {
     color: var(--dodge-blue);
     transition: 0.2s ease-in-out;
 }
+
+.hero-image img {
+    object-fit: contain;
+    width: 100%;
+    z-index: 1;
+}
+
+
 
 @media screen and (max-width:600px) {
 

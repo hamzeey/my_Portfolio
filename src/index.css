@@ -45,7 +45,7 @@ body {
     line-height: 1.7rem;
     background-color: #121212;
     background-image: url(../src/Assets/bg.png);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(9px);
 }
 
 

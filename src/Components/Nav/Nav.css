@@ -61,7 +61,7 @@ nav {
 /* mobile screens */
 @media screen and (max-width:600px) {
     .logo {
-        height: 3rem;
+        height: 4.5rem;
         margin: 2px 5px;
     }
 
@@ -108,6 +108,7 @@ nav {
     .menu a.active {
         font-weight: bolder;
         font-size: 0.8rem;
+        color: var(--light-grey);
     }
 
     .activate {

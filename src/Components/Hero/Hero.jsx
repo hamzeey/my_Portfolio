@@ -5,23 +5,38 @@ import { AiFillGithub } from 'react-icons/ai'
 import { BsWhatsapp } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
 import { RiTwitterXLine } from 'react-icons/ri'
-import ME from '../../Assets/PNG image 12.png'
+import ME from '../../Assets/img 12.1.png'
+import { useTypewriter } from 'react-simple-typewriter'
 
 function Hero() {
+    const [typeEffect] = useTypewriter({
+        words: ['Front End Developer', 'Freelancer'],
+        loop: {},
+        typeSpeed: 100,
+        deleteSpeed: 50,
+    })
     return (
         <div className='Hero'>
             <div className='hero-container'>
                 <div className='socials'>
 
-                    <div><a href="" target='_blank'> <BsLinkedin size={18} /> </a></div>
-                    <div><a href="" target='_blank'> <AiFillGithub size={18} /> </a></div>
-                    <div><a href="" target='_blank'> <RiTwitterXLine size={18} /> </a></div>
+                    <div><a href="https://www.linkedin.com/in/habibullah-hamza-1b3138245/" target='_blank' rel="noreferrer"> <BsLinkedin size={18} /> </a></div>
+                    <div><a href="https://github.com/hamzeey" target='_blank' rel="noreferrer"> <AiFillGithub size={18} /> </a></div>
+                    <div><a href="https://twitter.com/_hamzeey_" target='_blank' rel="noreferrer"> <RiTwitterXLine size={18} /> </a></div>
                     <div><a href="" target='_blank'> <BsWhatsapp size={18} /> </a></div>
-                    <div><a href="" target='_blank'> <BsInstagram size={18} /> </a></div>
+                    <div><a href="https://www.instagram.com/_hamzeey_/?next=%2F" target='_blank' rel="noreferrer"> <BsInstagram size={18} /> </a></div>
 
                 </div>
                 <div className='hero-txt'>
-
+                    <div className='txt'>
+                        <h5>     <span className='wave'>👋</span> Hello, I am </h5>
+                        <h1>HABIBULLAH</h1>
+                        <h2>{typeEffect}</h2>
+                    </div>
+                    <div className='cta'>
+                        <a href="" className='btn'>Download CV</a>
+                        <a href="" className='btn2'>{"Let's Talk"}</a>
+                    </div>
                 </div>
                 <div className='hero-image'>
                     <img src={ME} />

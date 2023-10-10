@@ -95,6 +95,18 @@ h1 {
     .section {
         margin-top: 6rem;
     }
+
+    .btn {
+        width: max-content;
+        display: inline-block;
+        color: white;
+        padding: 0.6rem 0.9rem;
+        cursor: pointer;
+        border: 2px solid var(--darkest-blue);
+        border-radius: 0.9rem;
+        background: #121212;
+        transition: var(--transition);
+    }
 }
 
 @media screen and (max-width:600px) {

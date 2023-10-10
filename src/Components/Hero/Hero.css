@@ -190,7 +190,7 @@
     .cta {
         display: flex;
         top: 90%;
-        left: 15%;
+        left: 13%;
         margin-top: 25px;
     }
 
@@ -223,16 +223,132 @@
         z-index: 1;
         margin-top: 60px;
     }
+
 }
 
 
 
 @media screen and (min-width:601px) and (max-width:1023px) {
+
+
     .scroll-down {
-        justify-content: center;
-        align-items: center;
-        margin-top: 10rem;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+    }
+
+
+    .scroll-down a {
+        color: var(--dark-grey);
+        font-size: medium;
 
     }
 
+
+    .socials div {
+        margin-top: 20px;
+
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7rem;
+        padding-top: 100px;
+
+    }
+
+    .txt {
+        position: absolute;
+        padding-top: 10px;
+        line-height: 1.5;
+        top: 0;
+        right: 10%;
+    }
+
+    .wave {
+        font-size: 2.5rem;
+        margin-right: 15px;
+    }
+
+    .txt h5 {
+        font-size: 2.1rem;
+        color: var(--dark-grey);
+        font-weight: 400;
+    }
+
+    .txt h1 {
+        font-weight: bolder;
+        font-size: 2.5rem;
+        color: var(--light-grey);
+        margin-right: 110px;
+    }
+
+    .txt h2 {
+        font-weight: bolder;
+        font-size: 1.7rem;
+        color: var(--light-grey);
+        margin-left: 90px;
+    }
+
+    .hero-container {
+        height: 100vh;
+        position: relative;
+        display: grid;
+        grid-template-columns: 80px 1fr 80px;
+    }
+
+    .hero-txt {
+        display: block;
+        height: 40vh;
+        width: 85%;
+        left: 10%;
+        margin: 3px 20px;
+    }
+
+    .cta {
+        display: flex;
+        top: 60%;
+        left: 25%;
+        margin-top: 10px;
+        /* justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        margin-top:10px; */
+    }
+
+    .cta a {
+        margin-right: 20px;
+    }
+
+    .btn2 {
+        width: max-content;
+        display: inline-block;
+        color: white;
+        padding: 0.6rem 0.9rem;
+        cursor: pointer;
+        border: 2px solid var(--darkest-blue);
+        border-radius: 0.9rem;
+        background: var(--dodge-blue);
+        transition: var(--transition);
+    }
+
+    .hero-image {
+        display: block;
+        position: absolute;
+        height: 50vh;
+        width: 70%;
+        margin-top: 20px;
+        top: 40%;
+        right: 10%;
+    }
+
+    .hero-image img {
+        object-fit: contain;
+        height: 50vh;
+        width: 100%;
+        z-index: 1;
+    }
 }

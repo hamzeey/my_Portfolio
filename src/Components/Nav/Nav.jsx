@@ -20,7 +20,7 @@ function Nav() {
             <ul className={`menu ${toggle ? 'activate' : 'inactive'}`}>
 
                 <Link to="Hero" spy={true} smooth={false} offset={-150} duration={200}>HOME</Link>
-                <Link to="About" spy={true} smooth={false} offset={-110} duration={200}>ABOUT</Link>
+                <Link to="About" spy={true} smooth={false} offset={-75} duration={200}>ABOUT</Link>
                 <Link to="skill" spy={true} smooth={false} offset={-110} duration={200}>SKILLS</Link>
                 <Link to="Projects" spy={true} smooth={false} offset={-110} duration={200}>PROJECTS</Link>
                 <Link to="Contact" spy={true} smooth={false} offset={-110} duration={200}>CONTACT</Link>

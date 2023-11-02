@@ -1,3 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 .abt {
     height: 100vh;
+
+}
+
+.abt-header {
+    padding-top: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.abt-header h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--light-grey);
+    font-family: 'Nosifer', sans-serif;
+}
+
+.abt-container {
+    display: grid;
+    grid-template-columns: 42% 1fr;
+    position: relative;
+}
+
+
+
+.abt-img img {
+    object-fit: contain;
+    width: 80%;
+    z-index: 1;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+
+}
+
+.abt-text h3 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 2.5rem;
+    text-transform: capitalize;
+    color: var(--light-grey);
+    padding-left: 10px;
+
+}
+
+.name {
+    padding-left: 10px;
+    color: var(--dodge-blue);
+}
+
+.p-abt {
+    color: var(--light-grey);
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    overflow: hidden;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.13rem;
+    font-weight: 600;
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+
+.abt-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bio-1 {
+    text-transform: capitalize;
+    text-align: justify;
+    padding-left: 1rem;
+    font-weight: bold;
+    color: var(--light-grey);
+    font-family: 'Philosopher', sans-serif;
+}
+
+.bio-2 {
+    text-transform: capitalize;
+    text-align: justify;
+    padding-left: 1.5rem;
+    font-weight: bold;
+    color: var(--light-grey);
+    font-family: 'Philosopher', sans-serif;
+}
+
+.bio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 4px solid var(--dodge-blue);
+    border-radius: 15px;
+    width: 85%;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-top: 5px;
+    line-height: 1.7;
+    padding-bottom: 5px;
+    box-shadow: 2px 2px 15px;
+    color: var(--light-grey);
+
+}
+
+
+
+@media screen and (max-width:600px) {
+
+
+    .abt-img img {
+        display: none;
+    }
+
+    .abt-container {
+        display: block;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .p-abt {
+        padding: 5px;
+        line-height: 1.2;
+        font-size: 1.1rem;
+    }
+
+    .abt-btn {
+        margin-top: 20px;
+    }
+
+    .bio-container {
+        width: 95%;
+        display: block;
+    }
+
+    .bio-2 {
+        padding-left: 0.5rem;
+    }
+
+    .bio-1 {
+        padding-left: 0.5rem;
+    }
+
+    .abt-text h3 {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 1.8 rem;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 2rem;
+        text-transform: capitalize;
+        color: var(--light-grey);
+        padding-left: 15px;
+
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+    .abt-container {
+        display: block;
+    }
+
+    .abt-img img {
+        object-fit: contain;
+        width: 100vw;
+        display: block;
+        height: 32vh;
+        z-index: 1;
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+
+    }
+
+    .abt-text h3 {
+        justify-content: center;
+        padding-top: 1.5rem;
+    }
+
+    .p-abt {
+        width: 94%;
+        padding: 0 5px;
+        color: var(--light-grey);
+        margin-top: 1.5rem;
+        line-height: 1.5;
+        overflow: hidden;
+        text-align: justify;
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: 'Philosopher', sans-serif;
+    }
+
+    .bio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 4px solid var(--dodge-blue);
+        border-radius: 15px;
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 15px;
+        padding-top: 5px;
+        line-height: 1.7;
+        padding-bottom: 5px;
+        box-shadow: 2px 2px 15px;
+        color: var(--light-grey);
+        font-size: 1.2rem;
+
+    }
+
+    .abt-btn {
+        margin-top: 25px;
+    }
 }

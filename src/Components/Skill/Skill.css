@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .skills {
     height: 100vh;
+}
+
+.skills-header {
+    padding-top: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-header h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--light-grey);
+    font-family: 'Nosifer', sans-serif;
 }

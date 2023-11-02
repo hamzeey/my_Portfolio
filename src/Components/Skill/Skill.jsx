@@ -4,7 +4,10 @@ import './Skill.css'
 function Skill() {
     return (
         <section id='skill' className='skills'>
-            <h2>Skills</h2>
+            <div className='skills-header'>
+                <h2>Skills</h2>
+            </div>
+
         </section>
     )
 }

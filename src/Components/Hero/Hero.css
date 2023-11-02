@@ -125,7 +125,7 @@
     border-radius: 1rem;
     background: var(--dodge-blue);
     transition: var(--transition);
-
+    box-shadow: 2px 2px 5px;
 }
 
 .btn2:hover {

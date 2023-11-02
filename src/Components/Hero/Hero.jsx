@@ -23,7 +23,7 @@ function Hero() {
                     <div><a href="https://www.linkedin.com/in/habibullah-hamza-1b3138245/" target='_blank' rel="noreferrer"> <BsLinkedin size={18} /> </a></div>
                     <div><a href="https://github.com/hamzeey" target='_blank' rel="noreferrer"> <AiFillGithub size={18} /> </a></div>
                     <div><a href="https://twitter.com/_hamzeey_" target='_blank' rel="noreferrer"> <RiTwitterXLine size={18} /> </a></div>
-                    <div><a href="" target='_blank'> <BsWhatsapp size={18} /> </a></div>
+                    <div><a href="https://api.whatsapp.com/send?phone=2348090709804" target='_blank' rel="noreferrer"> <BsWhatsapp size={18} /> </a></div>
                     <div><a href="https://www.instagram.com/_hamzeey_/?next=%2F" target='_blank' rel="noreferrer"> <BsInstagram size={18} /> </a></div>
 
                 </div>

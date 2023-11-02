@@ -27,12 +27,6 @@
     --berry-blue: #0041c2;
     --btn-blue: #4db5ff;
 
-
-
-    --container-width-lg: 75%;
-    --container-width-md: 85%;
-    --container-width-sm: 90%;
-
     --transition: all 400ms ease;
 
 }
@@ -79,6 +73,7 @@ h1 {
     border-radius: 1rem;
     background: #121212;
     transition: var(--transition);
+    box-shadow: 2px 2px 10px;
 }
 
 .btn:hover {

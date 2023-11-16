@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
+/* 
 .abt {
     height: 100vh;
 
-}
+} */
 
 .abt-header {
     padding-top: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .abt-header h2 {
@@ -148,6 +146,7 @@
 
     .bio-1 {
         padding-left: 0.5rem;
+
     }
 
     .abt-text h3 {

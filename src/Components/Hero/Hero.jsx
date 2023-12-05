@@ -7,6 +7,7 @@ import { BsInstagram } from 'react-icons/bs'
 import { RiTwitterXLine } from 'react-icons/ri'
 import ME from '../../Assets/img 12.1.png'
 import { useTypewriter } from 'react-simple-typewriter'
+import CV from '../../Assets/cv.pdf'
 
 function Hero() {
     const [typeEffect] = useTypewriter({
@@ -34,15 +35,15 @@ function Hero() {
                         <h2>{typeEffect}</h2>
                     </div>
                     <div className='cta'>
-                        <a href="" className='btn'>Download CV</a>
-                        <a href="" className='btn2'>{"Let's Talk"}</a>
+                        <a href={CV} download className='btn'>Download CV</a>
+                        <a href="#Contact" className='btn2'>{"Let's Talk"}</a>
                     </div>
                 </div>
                 <div className='hero-image'>
                     <img src={ME} />
                 </div>
                 <div className='scroll-down'>
-                    <a href="#Contact">SCROLL DOWN</a>
+                    <a href="#Footer">SCROLL DOWN</a>
                 </div>
 
             </div>

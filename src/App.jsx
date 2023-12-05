@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer'
 import Projects from './Components/Projectss/Projects'
 
 
+
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <About />
       <Skill />
+
       <Projects />
       <Contact />
       <Footer />

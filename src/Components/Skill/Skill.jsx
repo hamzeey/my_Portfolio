@@ -1,4 +1,4 @@
-// import React from 'react'
+
 import './Skill.css'
 
 function Skill() {
@@ -7,6 +7,23 @@ function Skill() {
             <div className='skills-header'>
                 <h2>Skills</h2>
             </div>
+
+            <div className='skill-container'>
+
+                <div className='container'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+
+
+
+
 
         </section>
     )

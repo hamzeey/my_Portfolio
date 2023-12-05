@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* .skills {
+.skills {
     height: 100vh;
-} */
+}
+
 
 .skills-header {
     margin-top: 2rem;
@@ -17,6 +18,29 @@
     color: var(--light-grey);
     font-family: 'Nosifer', sans-serif;
 }
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
+.container div {
+    width: 120px;
+    height: 120px;
+    background-color: gray;
+    border-radius: 15px;
+
+}
+
+
 
 
 @media screen and (max-width:600px) {

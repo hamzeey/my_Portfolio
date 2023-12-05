@@ -1,6 +1,7 @@
 // import React from 'react'
 import './About.css'
 import Abt from '../../Assets/img 2.1.png'
+import CV from '../../Assets/cv.pdf'
 function About() {
     return (
         <section id='About' className='abt'>
@@ -31,7 +32,7 @@ function About() {
                             </div>
                         </div>
                         <div className='abt-btn'>
-                            <a href="" className='btn'>Download CV</a>
+                            <a href={CV} download className='btn'>Download CV</a>
                         </div>
                     </div>
                 </div>

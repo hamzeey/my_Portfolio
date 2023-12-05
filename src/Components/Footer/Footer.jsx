@@ -3,7 +3,9 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <div>Footer</div>
+        <section id='Footer' className='footer'>
+            <h2>Footer</h2>
+        </section>
     )
 }
 

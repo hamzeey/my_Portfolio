@@ -75,6 +75,11 @@
         margin-top: 2rem;
         padding-top: 1rem;
     }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 

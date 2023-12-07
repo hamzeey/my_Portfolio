@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-/* 
-.abt {
-    height: 100vh;
-
-} */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&display=swap');
 
 .abt-header {
     padding-top: 0.7rem;
@@ -63,9 +59,11 @@
     overflow: hidden;
     text-align: justify;
     padding: 10px;
-    font-size: 1.13rem;
+    font-size: 1.23rem;
     font-weight: 600;
-    font-family: 'Philosopher', sans-serif;
+    /* font-family: 'Philosopher', sans-serif; */
+    /* font-family: 'Bellefair', serif; */
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 
@@ -82,7 +80,9 @@
     padding-left: 1rem;
     font-weight: bold;
     color: var(--light-grey);
-    font-family: 'Philosopher', sans-serif;
+    /* font-family: 'Philosopher', sans-serif; */
+    font-family: 'Bellefair', serif;
+    /* font-family: 'Barlow Condensed', sans-serif; */
 }
 
 .bio-2 {
@@ -91,7 +91,8 @@
     padding-left: 1.5rem;
     font-weight: bold;
     color: var(--light-grey);
-    font-family: 'Philosopher', sans-serif;
+    /* font-family: 'Philosopher', sans-serif; */
+    font-family: 'Bellefair', serif;
 }
 
 .bio-container {
@@ -128,7 +129,7 @@
     .p-abt {
         padding: 5px;
         line-height: 1.2;
-        font-size: 1.1rem;
+        font-size: 1.19rem;
     }
 
     .abt-btn {
@@ -192,7 +193,7 @@
         line-height: 1.5;
         overflow: hidden;
         text-align: justify;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         font-weight: 600;
         font-family: 'Philosopher', sans-serif;
     }

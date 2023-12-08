@@ -1,9 +1,19 @@
 // import React from 'react'
 import './Projects.css'
 import space from '../../Assets/space-tourism.png'
-import space2 from '../../Assets/space2.png'
-import space3 from '../../Assets/space3.png'
+import { CiShare1 } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 
+
+const data = [
+
+    {
+        id: 1,
+        image: space,
+        title: "Space Tourism",
+        desc: "A website that gets apce tourists started and excited to visit space"
+    }
+]
 function Projects() {
     return (
         <section id='Projects' className='projects'>
@@ -14,50 +24,29 @@ function Projects() {
                 <div className="works-wrapper">
 
                     {/* this is where the map would start */}
-                    <div className="contaiiner">
-                        <div className="portfolio-img">
-                            <img src={space} alt="" />
-                            <div className="img-hover"></div>
-                        </div>
-                        <div className="portfolio-text">
-                            <h3 className='project-name'>jmjndn</h3>
-                            <p className='project-desc'>bak</p>
-                        </div>
-                        <div className='ctaa'>
-                            <a href="" className='btn2'>Live</a>
-                            <a href="" className='btnn'>Github</a>
-                        </div>
-                    </div>
+                    {
+                        data.map(({ id, image, title, desc }) => {
+                            return (
+                                <div className="contaiiner" key={id}>
+                                    <div className="portfolio-img">
+                                        <img src={image} alt="" />
+                                        <div className="img-hover"></div>
+                                    </div>
+                                    <div className="portfolio-text">
+                                        <h3 className='project-name'>{title}</h3>
+                                        <p className='project-desc'>{desc}</p>
+                                    </div>
+                                    <div className='ctaa'>
+                                        <a href="https://space-tourism-omega-nine.vercel.app/" className='btn2' target='_blank' rel="noreferrer">Live <CiShare1 size={20} /></a>
+                                        <a href="https://github.com/hamzeey/space" className='btnn' target='_blank' rel="noreferrer">Github <FaGithub size={20} /></a>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
 
-                    <div className="contaiiner">
-                        <div className="portfolio-img">
-                            <img src={space2} alt="" />
-                            <div className="img-hover"></div>
-                        </div>
-                        <div className="portfolio-text">
-                            <h3 className='project-name'>jmjndn</h3>
-                            <p className='project-desc'>bak</p>
-                        </div>
-                        <div className='ctaa'>
-                            <a href="" className='btn2'>Live</a>
-                            <a href="" className='btnn'>Github</a>
-                        </div>
-                    </div>
 
-                    <div className="contaiiner">
-                        <div className="portfolio-img">
-                            <img src={space3} alt="" />
-                            <div className="img-hover"></div>
-                        </div>
-                        <div className="portfolio-text">
-                            <h3 className='project-name'>jmjndn</h3>
-                            <p className='project-desc'>bak</p>
-                        </div>
-                        <div className='ctaa'>
-                            <a href="" className='btn2'>Live</a>
-                            <a href="" className='btnn'>Github</a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>

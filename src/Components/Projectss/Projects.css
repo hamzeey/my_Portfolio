@@ -28,13 +28,13 @@
 .works-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 1rem;
 }
 
 .contaiiner {
     background-color: #2b2a2a;
     padding: 0.5rem;
-    margin: 3rem;
+    margin: 1rem;
     border-radius: 0.7rem;
     color: black;
     cursor: pointer;
@@ -45,7 +45,7 @@
 }
 
 .contaiiner:hover {
-    transform: scale();
+    box-shadow: 0 0 25px rgba(175, 166, 166, 0.2);
 }
 
 .portfolio-img {
@@ -84,15 +84,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.project-name {
+    font-size: larger;
+    font-weight: bold;
+    color: var(--dodge-blue);
+}
+
+.project-desc {
+    text-align: center;
+    color: var(--light-grey);
+}
+
+.ctaa a {
+    font-size: medium;
+    font-weight: bold;
+    color: var(--light-grey);
 }
 
 .btn2 {
     width: max-content;
     display: inline-block;
     color: white;
-    padding: 0.3rem 1rem;
+    padding: 0.4rem 1.5rem;
     cursor: pointer;
     border: 2px solid var(--darkest-blue);
     border-radius: 1rem;
@@ -102,7 +120,7 @@
 }
 
 .btn2:hover {
-    background: var(--dark-grey);
+    background: #2b2a2a;
     border: 2px solid var(--light-blue);
 }
 
@@ -110,7 +128,7 @@
     width: max-content;
     display: inline-block;
     color: white;
-    padding: 0.3rem 0.5rem;
+    padding: 0.4rem 1.5rem;
     cursor: pointer;
     border: 2px solid var(--darkest-blue);
     border-radius: 1rem;
@@ -122,4 +140,26 @@
 .btnn:hover {
     background: var(--dark-grey);
     border: 2px solid var(--light-blue);
+
+}
+
+
+@media screen and (max-width:600px) {
+    .works-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-header h2 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+
+    .works-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

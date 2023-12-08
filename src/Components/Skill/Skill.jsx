@@ -1,14 +1,71 @@
 import './Skill.css'
-import JS from '../../Assets/Js.png'
-import TS from '../../Assets/Typescript .png'
-import Reactt from '../../Assets/React2.png'
-import Tailwind from '../../Assets/Tailwind 2.png'
-import html from '../../Assets/HTML .png'
-import css from '../../Assets/Css.png'
-import git from '../../Assets/Git 1.png'
-import bootstrap from '../../Assets/Bootstrap 2.png'
-import firebase from '../../Assets/Firebase .png'
+import JS from '../../Assets/JS.png'
+import TS from '../../Assets/TS.png'
+import Reactt from '../../Assets/React.png'
+import Tailwind from '../../Assets/Tailwind.png'
+import HTML from '../../Assets/HTML.png'
+import CSS from '../../Assets/CSS.png'
+import Git from '../../Assets/Git.png'
+import Bootstrap from '../../Assets/Bootstrap.png'
+import Firebase from '../../Assets/Firebase.png'
 
+
+const data = [
+    {
+        id: 1,
+        Image: JS,
+        title: 'JavaScript'
+
+    },
+    {
+        id: 2,
+        Image: TS,
+        title: 'TypeScript'
+
+    },
+    {
+        id: 3,
+        Image: Reactt,
+        title: 'React JS'
+
+    },
+    {
+        id: 4,
+        Image: Tailwind,
+        title: 'Tailwind'
+
+    },
+    {
+        id: 5,
+        Image: HTML,
+        title: 'HTML'
+
+    },
+    {
+        id: 6,
+        Image: CSS,
+        title: 'CSS'
+
+    },
+    {
+        id: 7,
+        Image: Git,
+        title: 'Git'
+
+    },
+    {
+        id: 8,
+        Image: Bootstrap,
+        title: 'Bootstrap'
+
+    },
+    {
+        id: 9,
+        Image: Firebase,
+        title: 'Firebase'
+
+    },
+]
 
 function Skill() {
     return (
@@ -20,69 +77,18 @@ function Skill() {
             <div className='skill-container'>
 
                 <div className='container'>
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={JS} alt="javaScript" />
-                        </div>
-                        <p>JavaScript</p>
-                    </div>
-
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={TS} alt="TypeScript" />
-                        </div>
-                        <p>TypeScript</p>
-                    </div>
-
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={Reactt} alt="React" />
-                        </div>
-                        <p>React JS</p>
-                    </div>
-
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={Tailwind} alt="Tailwind css" />
-                        </div>
-                        <p>Tailwind</p>
-                    </div>
-
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={html} alt="HTML" />
-                        </div>
-                        <p>HTML</p>
-                    </div>
-
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={css} alt="CSS" />
-                        </div>
-                        <p>CSS</p>
-                    </div>
-
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={git} alt="GIT" />
-                        </div>
-                        <p>Git</p>
-                    </div>
-
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={bootstrap} alt="BOOTSTRAP" />
-                        </div>
-                        <p>Bootstrap</p>
-                    </div>
-
-                    <div className='outline'>
-                        <div className='circle'>
-                            <img src={firebase} alt="FIREBASE" />
-                        </div>
-                        <p>Firebase</p>
-                    </div>
-
+                    {
+                        data.map(({ id, Image, title }) => {
+                            return (
+                                <div className='outline' key={id}>
+                                    <div className='circle'>
+                                        <img src={Image} alt={title} />
+                                    </div>
+                                    <p>{title}</p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
 

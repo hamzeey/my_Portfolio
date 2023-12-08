@@ -83,9 +83,6 @@ h1 {
 
 @media screen and (min-width:601px) and (max-width:1023px) {
 
-    .container {
-        width: var(--container-width-md);
-    }
 
     .section {
         margin-top: 6rem;

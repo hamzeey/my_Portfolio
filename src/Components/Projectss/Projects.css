@@ -138,7 +138,7 @@
 }
 
 .btnn:hover {
-    background: var(--dark-grey);
+    background: rgb(59, 56, 56);
     border: 2px solid var(--light-blue);
 
 }

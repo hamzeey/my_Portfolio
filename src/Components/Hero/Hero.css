@@ -115,23 +115,7 @@
     margin-right: 30px;
 }
 
-.btn2 {
-    width: max-content;
-    display: inline-block;
-    color: white;
-    padding: 0.6rem 0.9rem;
-    cursor: pointer;
-    border: 2px solid var(--darkest-blue);
-    border-radius: 1rem;
-    background: var(--dodge-blue);
-    transition: var(--transition);
-    box-shadow: 2px 2px 5px;
-}
 
-.btn2:hover {
-    background: var(--dark-grey);
-    border: 2px solid var(--light-blue);
-}
 
 @media screen and (max-width:600px) {
 
@@ -151,7 +135,7 @@
         display: block;
         height: 20vh;
         width: 100%;
-        margin: 3px 20px;
+        margin: 3px auto;
     }
 
     .txt {
@@ -189,26 +173,16 @@
 
     .cta {
         display: flex;
-        top: 90%;
-        left: 13%;
-        margin-top: 25px;
+        justify-content: center;
+        align-items: center;
+        margin: 60px auto;
     }
 
     .cta a {
-        margin-right: 15px;
+        margin-right: 20px;
     }
 
-    .btn2 {
-        width: max-content;
-        display: inline-block;
-        color: white;
-        padding: 0.4rem 0.6rem;
-        cursor: pointer;
-        border: 2px solid var(--darkest-blue);
-        border-radius: 0.8rem;
-        background: var(--dodge-blue);
-        transition: var(--transition);
-    }
+
 
     .hero-image {
         display: block;
@@ -310,30 +284,17 @@
 
     .cta {
         display: flex;
-        top: 60%;
-        left: 25%;
-        margin-top: 10px;
-        /* justify-content: center;
+        justify-content: center;
         align-items: center;
-        margin-right: 30px;
-        margin-top:10px; */
+        margin: 10px auto;
+
     }
 
     .cta a {
         margin-right: 20px;
     }
 
-    .btn2 {
-        width: max-content;
-        display: inline-block;
-        color: white;
-        padding: 0.6rem 0.9rem;
-        cursor: pointer;
-        border: 2px solid var(--darkest-blue);
-        border-radius: 0.9rem;
-        background: var(--dodge-blue);
-        transition: var(--transition);
-    }
+
 
     .hero-image {
         display: block;

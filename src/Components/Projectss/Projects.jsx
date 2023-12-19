@@ -3,7 +3,7 @@ import './Projects.css'
 import space from '../../Assets/space-tourism.png'
 import { CiShare1 } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-
+import weather from '../../Assets/weather3.png'
 
 const data = [
 
@@ -11,7 +11,14 @@ const data = [
         id: 1,
         image: space,
         title: "Space Tourism",
-        desc: "A website that gets apce tourists started and excited to visit space"
+        desc: "A website that gets space tourists started and excited to visit space."
+    },
+
+    {
+        id: 2,
+        image: weather,
+        title: "Weather App",
+        desc: "A weather app built using the AccuWeather API."
     }
 ]
 function Projects() {
@@ -23,7 +30,7 @@ function Projects() {
             <div className='main-wrapper'>
                 <div className="works-wrapper">
 
-                    {/* this is where the map would start */}
+                    {/* map form here,*/}
                     {
                         data.map(({ id, image, title, desc }) => {
                             return (

@@ -43,7 +43,7 @@ function Hero() {
                     <img src={ME} />
                 </div>
                 <div className='scroll-down'>
-                    <a href="#Footer">SCROLL DOWN</a>
+                    <a href="#Contact">SCROLL DOWN</a>
                 </div>
 
             </div>

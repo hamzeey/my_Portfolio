@@ -29,3 +29,104 @@
     color: var(--dodge-blue);
     font-family: 'Nosifer', sans-serif;
 }
+
+.cnt-cont {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 4em auto;
+    width: 60%;
+}
+
+.contactss {
+    align-items: center;
+    background-color: #2b2a2a;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    min-width: 290px;
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+
+}
+
+.contactss img {
+    height: 40px;
+    margin: 0 0.7rem;
+    width: 40px;
+}
+
+.contactss a {
+    color: var(--light-grey);
+}
+
+.cnt-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 60%;
+}
+
+.fields {
+
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0.75rem 0;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.fields input {
+    background-color: #2b2a2a;
+    border: none;
+    border-radius: 7px;
+    font-family: sans-serif;
+    outline: none;
+    padding: 0.95rem;
+    width: 100%;
+}
+
+.fields textarea {
+    height: 100px;
+    background-color: #2b2a2a;
+    border: none;
+    border-radius: 7px;
+    font-family: sans-serif;
+    outline: none;
+    padding: 0.95rem;
+    width: 100%;
+}
+
+.p-text {
+    font-size: .9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:600px) {
+    .cnt-cont {
+        margin: 1rem 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+    .cnt-cont {
+        margin: 1rem 0;
+        width: 100%;
+    }
+}

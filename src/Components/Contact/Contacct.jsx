@@ -1,6 +1,5 @@
-// import React from 'react'
 import './Contact.css'
-function contact() {
+function Contacct() {
     return (
         <section id='Contact' className='contact'>
             <h2>Contact</h2>
@@ -8,4 +7,4 @@ function contact() {
     )
 }
 
-export default contact
+export default Contacct

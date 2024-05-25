@@ -11,7 +11,9 @@ const data = [
         id: 1,
         image: space,
         title: "Space Tourism",
-        desc: "A website that gets space tourists started and excited to visit space."
+        desc: "A website that gets space tourists started and excited to visit space.",
+        link1: "https://space-tourism-omega-nine.vercel.app/",
+        link2: "https://github.com/hamzeey/space"
     },
 
     {
@@ -32,7 +34,7 @@ function Projects() {
 
                     {/* map form here,*/}
                     {
-                        data.map(({ id, image, title, desc }) => {
+                        data.map(({ id, image, title, desc, link1, link2 }) => {
                             return (
                                 <div className="contaiiner" key={id}>
                                     <div className="portfolio-img">
@@ -44,8 +46,8 @@ function Projects() {
                                         <p className='project-desc'>{desc}</p>
                                     </div>
                                     <div className='ctaa'>
-                                        <a href="https://space-tourism-omega-nine.vercel.app/" className='btn2' target='_blank' rel="noreferrer">Live <CiShare1 size={20} /></a>
-                                        <a href="https://github.com/hamzeey/space" className='btnn' target='_blank' rel="noreferrer">Github <FaGithub size={20} /></a>
+                                        <a href={link1} className='btn2' target='_blank' rel="noreferrer">Live <CiShare1 size={20} /></a>
+                                        <a href={link2} className='btnn' target='_blank' rel="noreferrer">Github <FaGithub size={20} /></a>
                                     </div>
                                 </div>
                             )

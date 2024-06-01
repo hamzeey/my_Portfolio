@@ -1,0 +1,18 @@
+.containerrr {
+    width: fit-content;
+    overflow: hidden;
+}
+
+@media screen and (max-width:600px) {
+    .containerrr {
+        width: fit-content;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+    .containerrr {
+        width: fit-content;
+        overflow: hidden;
+    }
+}

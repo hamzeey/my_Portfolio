@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 
 
-function Contact() {
+function Contaact() {
 
     const form = useRef();
     const sendEmail = (e) => {
@@ -48,12 +48,13 @@ function Contact() {
                 </div>
 
                 <div className='fields'>
-                    <textarea className='p-text' type="text" placeholder='Your Message' name='message' required />
+                    <textarea className='p-text' type="text" placeholder='Your Messages' name='message' required />
                 </div>
-                <button className='btn' type='submit'>Send Mesage</button>
+                <button className='btn' type='submit'>Send Messages</button>
+
             </form>
         </section>
     )
 }
 
-export default Contact
+export default Contaact

@@ -1,5 +1,5 @@
 import './Skill.css'
-import JS from '../../Assets/JS.png'
+import JS from '../../Assets/Js.png'
 import TS from '../../Assets/TS.png'
 import Reactt from '../../Assets/React.png'
 import Tailwind from '../../Assets/Tailwind.png'

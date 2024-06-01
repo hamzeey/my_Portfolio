@@ -10,14 +10,15 @@ import Projects from './Components/Projectss/Projects'
 
 function App() {
   return (
-    <div className='containerrr'>
-      <Nav />
-      <Hero />
-      <About />
-      <Skill />
-      <Projects />
-      <Contact />
-
+    <div>
+      <div className='containerrr'>
+        <Nav />
+        <Hero />
+        <About />
+        <Skill />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   )
 }

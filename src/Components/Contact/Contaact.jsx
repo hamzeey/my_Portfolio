@@ -48,9 +48,9 @@ function Contaact() {
                 </div>
 
                 <div className='fields'>
-                    <textarea className='p-text' type="text" placeholder='Your Messages' name='message' required />
+                    <textarea className='p-text' type="text" placeholder='Your Message' name='message' required />
                 </div>
-                <button className='btn' type='submit'>Send Messages</button>
+                <button className='btn' type='submit'>Send Message</button>
 
             </form>
         </section>

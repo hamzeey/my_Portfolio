@@ -34,14 +34,14 @@ display: none;
     padding: 5px 20px;
     margin: 0.3rem;
     text-align: left;
-    font-size: 0.65em;
+    font-size: 0.68rem;
 }
 
 
 .menu a.active {
     font-weight: bolder;
-    color: rgb(64, 66, 149);
-    font-size: 0.75rem;
+    color: rgb(199, 84, 208);
+    font-size: 0.85rem;
 }
 
 .menu a:hover {

@@ -110,7 +110,7 @@ text-align: center;
 .menu a.active {
     font-weight: bolder;
     font-size: 1rem;
-    color: var(--light-grey);
+    color: rgb(199, 84, 208);
 
 }
 
@@ -191,7 +191,7 @@ text-align: center;
     .menu a.active {
         font-weight: bolder;
         font-size: 1rem;
-        color: var(--light-grey);
+        color: rgb(199, 84, 208);
     
     }
     

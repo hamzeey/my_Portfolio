@@ -1,18 +1,18 @@
 .containerrr {
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
 }
 
 @media screen and (max-width:600px) {
     .containerrr {
-        width: 100%;
+        width: 100vw;
         overflow: hidden;
     }
 }
 
 @media screen and (min-width:601px) and (max-width:1023px) {
     .containerrr {
-        width: 100%;
+        width: 100vw;
         overflow: hidden;
     }
 }

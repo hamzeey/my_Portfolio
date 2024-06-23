@@ -1,4 +1,228 @@
-nav {
+nav{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    padding: 0 30px;
+    align-items: center;
+    background: linear-gradient(180deg, #333333 45%, transparent);
+    backdrop-filter: blur(3px);
+
+}
+ nav img{
+    width: 200px;
+    height: 76px;
+    margin: 0 15px;
+ }
+.menu-icon{
+display: none;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.menu a {
+    padding: 5px 20px;
+    margin: 0.3rem;
+    text-align: left;
+    font-size: 0.65em;
+}
+
+
+.menu a.active {
+    font-weight: bolder;
+    color: rgb(64, 66, 149);
+    font-size: 0.75rem;
+}
+
+.menu a:hover {
+    color: #46a0f5;
+    transition: 0.4s ease-in-out;
+}
+
+
+
+/* mobile screens */
+@media screen and (max-width:600px) {
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav img{
+        width: 150px;
+        height: 66px;
+        margin: 0 3px;
+     }
+     .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin: 0 25px;
+        z-index: 20;
+       
+    }
+
+  .menu{
+    position: absolute;
+    background: linear-gradient(180deg, #333333 45%, transparent);
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 15px;
+    align-items: flex-start;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    justify-content: center;
+    cursor: pointer;
+    width: 50%;
+    transition: right 0.5s;
+    padding-top: 0;
+    text-align: center;
+  }
+.abs{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+  .menu a {
+    color: white;
+    visibility: inherit;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+text-align: center;
+}
+.menu li{
+    width: 100%;
+   
+}
+.menu a.active {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: var(--light-grey);
+
+}
+
+.activate {
+    visibility: visible;
+    right: 0rem;
+    opacity: 1;
+    top: 0.5rem;
+    height: 100vh;
+
+}
+
+.inactive {
+    visibility: hidden;
+}
+
+}
+
+
+
+/* medium screens */
+ @media screen and (min-width:601px) and (max-width:1023px) {
+
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav img{
+        width: 150px;
+        height: 66px;
+        margin: 0 3px;
+     }
+     .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin: 0 15px;
+        z-index: 20;
+       
+    }
+
+    .menu{
+        position: absolute;
+        background: linear-gradient(180deg, #333333 45%, transparent);
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem;
+        border-radius: 15px;
+        align-items: flex-start;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        justify-content: center;
+        cursor: pointer;
+        width: 50%;
+        transition: right 0.5s;
+        padding-top: 0;
+        text-align: center;
+      }
+    .abs{
+        position: absolute;
+        top: 0;
+        right: 0;
+    
+    }
+      .menu a {
+        color: white;
+        visibility: inherit;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.85rem;
+    text-align: center;
+    }
+    .menu li{
+        width: 100%;
+       
+    }
+    .menu a.active {
+        font-weight: bolder;
+        font-size: 1rem;
+        color: var(--light-grey);
+    
+    }
+    
+    .activate {
+        visibility: visible;
+        right: 0rem;
+        opacity: 1;
+        top: 0.5rem;
+        height: 100vh;
+    
+    }
+    
+    .inactive {
+        visibility: hidden;
+    }
+    
+    }
+    
+    
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav {
     position: sticky;
     left: 0px;
     top: 0px;
@@ -10,7 +234,7 @@ nav {
     align-items: center;
     padding: 5px 5px;
     background: linear-gradient(180deg, #333333 45%, transparent);
-
+overflow: scroll;
 }
 
 .logo {
@@ -56,10 +280,10 @@ nav {
 
 .menu-icon {
     display: none;
-}
+} */
 
 /* mobile screens */
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
     .logo {
         height: 4.5rem;
         margin: 2px 5px;
@@ -125,11 +349,11 @@ nav {
     .inactive {
         visibility: hidden;
     }
-}
+} */
 
 
 /* medium screens */
-@media screen and (min-width:601px) and (max-width:1023px) {
+/* @media screen and (min-width:601px) and (max-width:1023px) {
 
     .logo {
         height: 3.5rem;
@@ -195,4 +419,4 @@ nav {
         visibility: hidden;
     }
 
-}
+} */

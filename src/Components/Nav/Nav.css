@@ -9,6 +9,9 @@ nav{
     align-items: center;
     background: linear-gradient(180deg, #333333 45%, transparent);
     backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
  nav img{
@@ -56,8 +59,8 @@ display: none;
         justify-content: space-between;
     }
     nav img{
-        width: 150px;
-        height: 66px;
+        width: 130px;
+        height: 50px;
         margin: 0 3px;
      }
      .menu-icon {
